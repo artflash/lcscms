@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>后台登录</title>
+    <link href="__ADMINCSS__/login.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="login-container">
+    <div class="login-panel">
+        <div class="login-banner">
+            <img src="__ADMINIMG__/logo.png">
+            <h1>网站后台管理系统</h1>
+        </div>
+        <div class="login-content">
+            <div class="login-info">
+                <form>
+                    <div class="infodiv">
+                        <label>用户名：</label>
+                        <input class="login-username" type="text" name="username" title="请输入用户名" placeholder="请输入用户名"></div>
+                    <div class="infodiv">
+                        <label>密码：</label>
+                        <input class="login-password" type="password" name="password" title="请输入密码" placeholder="请输入密码">
+                    </div>
+                    <div class="infodiv">
+                        <label>验证码：</label>
+                        <input class="login-verify" type="text" name="verify" title="请输入验证码" placeholder="验证码">
+                        <img class="verify-img" src="{:captcha_src()}" alt="captcha" onclick="this.src='{:captcha_src()}'" />
+                        <span></span>
+                    </div>
+                    <div class="infodiv">
+                        <button class="login-btn" type="submit">登录</button>
+                    </div>
+                </form>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="description">
+                <p class="title">欢迎您选择灵创石科技</p>
+                <p class="text-descript">我们一直在努力并提供能为您带来更好的服务体验</p>
+                <p>技术支持：灵创石科技</p>
+                <p>http://www.lingchuangshi.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
